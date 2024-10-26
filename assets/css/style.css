@@ -1,0 +1,267 @@
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #fff;
+  --black-color: #000;
+  --gray-color: #e4e4e7;
+  --brand-color: #ff5678;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  font: 1.6rem 'Quicksand';
+  background-color: var(--bg-color);
+}
+
+.--brand-color {
+  color: var(--brand-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Borel', sans-serif;
+  margin-bottom: 8rem;
+  font-size: 2.4rem;
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20rem;
+  gap: 3.2rem;
+}
+
+.hero__img {
+  height: 24rem;
+}
+
+.hero__headline {
+  font-size: 8rem;
+  max-width: 80rem;
+  text-align: center;
+  line-height: 9.6rem;
+  font-family: 'Borel', sans-serif;
+}
+
+.hero__text {
+  max-width: 40rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.hero__btn {
+  all: unset;
+  cursor: pointer;
+  padding: 0.8rem 2.4rem;
+  border: 0.1rem var(--black-color) solid;
+  border-right: 0.32rem var(--black-color) solid;
+  border-bottom: 0.32rem var(--black-color) solid;
+  background-color: var(--brand-color);
+  font-weight: 600;
+}
+
+.hero__btn:hover {
+  text-decoration: underline;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20rem;
+  max-width: 96rem;
+  width: 100%;
+  gap: 3.2rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__headlineAndText {
+  gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__headline {
+  max-width: 40rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.4rem;
+}
+
+.content__text {
+  max-width: 32rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.content__img {
+  width: 48rem;
+}
+
+.--right {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.marks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20rem;
+  max-width: 96rem;
+  width: 100%;
+  gap: 3.2rem;
+}
+
+.marks__title {
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: var(--brand-color);
+  font-family: 'Borel', sans-serif;
+}
+
+.marks__elements {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.marks__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid var(--gray-color);
+  flex-direction: column;
+  border-radius: 0.8rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+  height: 40rem;
+  width: 100%;
+  gap: 4rem;
+}
+
+.marks__img {
+  height: 16rem;
+}
+
+footer {
+  width: 100%;
+  max-width: 96rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 8rem;
+  border-top: 0.1rem solid var(--black-color);
+
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.--logo {
+  font-weight: 700;
+  font-family: 'Borel', sans-serif;
+}
+
+/* Document */
+
+.doc-container .--none {
+  display: none;
+}
+
+.doc-container .--block {
+  display: block;
+}
+
+.doc-container {
+  width: 100%;
+  margin: auto;
+  max-width: 96rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.forms {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.forms input {
+  width: 100%;
+  height: 4rem;
+  padding-left: 1.6rem;
+}
+
+.forms__btn,
+.printBtn {
+  all: unset;
+  cursor: pointer;
+  padding: 0.8rem 2.4rem;
+  border: 0.1rem var(--black-color) solid;
+  border-right: 0.32rem var(--black-color) solid;
+  border-bottom: 0.32rem var(--black-color) solid;
+  background-color: var(--brand-color);
+  font-weight: 600;
+}
+
+.forms__btn:hover,
+.printBtn:hover {
+  text-decoration: underline;
+}
+
+.document {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}

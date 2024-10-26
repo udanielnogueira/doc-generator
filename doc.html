@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/script/script.js" defer></script>
+    <script src="./assets/script/data.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="doc-container">
+      <section class="logo">
+        <p>Contratify</p>
+      </section>
+
+      <section class="forms">
+        <input id="name" type="text" placeholder="Nome" />
+        <input id="cpf" type="text" placeholder="CPF" />
+        <button class="forms__btn" onclick="gerarDoc()">Gerar Contrato</button>
+      </section>
+
+      <section class="document">
+        <p class="document__p1"></p>
+      </section>
+
+      <button class="printBtn --none" onclick="printDoc()">Imprimir</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+let info = {
+  name: '',
+  cpf: '',
+};
